@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import './Styles/home.css'
 import { Box } from '@mui/material'
 import AboutMe from './Pages/AboutMe'
-import Resume from './Pages/Resume'
 import Navbar from './Component/Navbar'
 import WhatIDo from './Pages/WhatIDo'
 import Contact from './Pages/Contact'
@@ -10,6 +9,10 @@ import Home from './Pages/Home';
 import RiseLoader from "react-spinners/RiseLoader";
 import GoToTop from './Component/GoToTop'
 import Education from './Pages/Education'
+import Testimonial from './Pages/Testimonial'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import NotFound from './Pages/Error'
+
 
 
 function App() {
@@ -25,6 +28,7 @@ function App() {
 
   return (
     <div>
+      
       {
         loading ?
           <Box className='loader'>
@@ -45,14 +49,15 @@ function App() {
             <Home />
             <AboutMe />
             <Education />
-            <Resume />
+            <Testimonial />
             <WhatIDo />
             {/* <Portfolio /> */}
-            {/* <Testimonial /> */}
             <Contact />
+          
           
           </div>
       }
+    
     </div>
   
   );

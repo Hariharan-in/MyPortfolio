@@ -39,7 +39,7 @@ const Resume = () => {
           <Box sx={{ marginTop: "5rem" }}>
             <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "26px" }}>My Skills</Typography>
 
-            <Grid container rowSpacing={4} columnSpacing={5} marginTop={0}>
+            {/* <Grid container rowSpacing={4} columnSpacing={5} marginTop={0}>
 
               <Grid item xs={12} sm={6}>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: "15px" }}>
@@ -101,7 +101,99 @@ const Resume = () => {
                 </Box>
               </Grid>
 
-            </Grid>
+            </Grid> */}
+
+            <Grid container rowSpacing={4} columnSpacing={5} marginTop={0}>
+
+                <Grid item xs={12} sm={6} md={4}>
+                <Box className='hover-skillbox' sx={{ bgcolor:"transparent", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box className='skill-img' sx={{display:"none"}}>
+                <img src='assets/media/skills/microsoft-excel.jpeg' width={50} height={50}/>
+                 </Box>
+                 <Box>
+                 <Box  className="skill-name" sx={{ background:"linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px",textAlign:"center" }}>
+                    <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>Microsoft Excel</Typography>
+                  </Box>
+              <Typography className='skill-typo' sx={{ fontSize: "15px", display:"none", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Proficient in Excel for data analysis, including data cleaning, advanced formulas, and creating reports with pivot tables and charts.
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box>
+                <img src='assets/media/skills/python.webp' width={50} height={50}/>
+                 </Box>
+                 <Box>
+                
+              <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Skilled in Python for data analysis, including data manipulation, statistical analysis, and automation using libraries like Pandas and NumPy.
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box>
+                <img src='assets/media/skills/My_sql.png' width={50} height={50}/>
+                 </Box>
+                 <Box>
+                
+              <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Familiar with MySQL for database management, including writing queries and performing data extraction for analysis.
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box>
+                <img src='assets/media/skills/web.jpg' width={50} height={50}/>
+                 </Box>
+                 <Box>
+                 
+              <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Experienced Front-End Developer proficient
+in HTML, CSS, and JavaScript, with expertise
+in modern frameworks like ReactJs
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box>
+                <img src='assets/media/skills/powerbi.png' width={60} height={50}/>
+                 </Box>
+                 <Box>
+                 
+              <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Skilled in Power BI for developing interactive dashboards and visualizations to communicate data insights effectively.
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              <Grid item xs={12} sm={6} md={4}>
+                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
+                 <Box>
+                <img src='assets/media/skills/Git.png' width={50} height={50}/>
+                 </Box>
+                 <Box>
+                 
+              <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px",textAlign:"left",marginTop:"10px" }}>
+              Proficient in Git for version control, managing code repositories, and collaborating on data analysis projects to ensure efficient workflow and code integrity.
+              </Typography>
+                 </Box>
+                 
+                    </Box>
+              </Grid>
+              </Grid>
           </Box>
 
 

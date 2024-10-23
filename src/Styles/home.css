@@ -212,13 +212,13 @@ nav .nav_toggler div {
 
 #home  .arrow {
    margin-top: 30px;
-  margin-left: 60px;
+ 
 }
 
 @media screen and (max-width: 960px) {
 
     .arrow {
-       margin-right: 50px;
+       margin-left: 0px;
     }
     
 }
@@ -329,17 +329,48 @@ nav .nav_toggler div {
 }
 
 @media screen and (max-width: 920px) {
-    .home-display{
-     
-    }
+   
 
 .home-display  .img-container img {
+
     display: none;
-  
+  }
+
+.home-display .title {
+      margin-left: 150px;
+      justify-content: center;
+}
+
 }
 
 
+@media screen and (max-width: 820px) {
+    .home-display .title {
+        margin-left: 120px;
+        
+  }
 }
+@media screen and (max-width: 720px) {
+    .home-display .title {
+        margin-left: 90px;
+        
+  }
+}
+@media screen and (max-width: 620px) {
+    .home-display .title {
+        margin-left: 70px;
+        
+  }
+}
+@media screen and (max-width: 520px) {
+    .home-display .title {
+        margin-left: 30px;
+        
+  }
+}
+
+
+
 
 .home-display  .img-container img {
     box-shadow: 30px 10px 10px rgba(.8, .6, .6, 0.6);
@@ -499,6 +530,39 @@ nav .nav_toggler div {
 
 
 /* Resume */
+
+
+#resume .skill-img {
+    display: none;
+}
+
+#resume  .skill-name {
+    display: block;
+    margin-left: 75px;
+}
+
+#resume .skill-name:hover .hover-skillbox{
+    background-color: black;
+    display: block;
+}
+
+#resume .skill-name:hover .skill-img{
+    
+    display: block;
+}
+
+#resume .skill-name:hover  .skill-typo{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px) {
     #resume .resume-title {
@@ -719,6 +783,10 @@ Swiper */
 
     #testimonial .testimonial-title {
         font-size: 48px;
+    }
+
+    #testimonial .skill-box {
+        height: 260px;
     }
 
 }

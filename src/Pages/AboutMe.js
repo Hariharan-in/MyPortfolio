@@ -23,21 +23,18 @@ const AboutMe = () => {
                                     <Box sx={{ display: "flex", flexDirection: "row", gap: "8px" }}>
                                         <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}>I'm</Typography>
                                         <Typography className='about-typo' sx={{ fontSize: "30px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text" }}>Hariharan,</Typography>
-                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}> a Web Developer</Typography>
+                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}> a Data Analyst</Typography>
                                     </Box>
                                     <br></br>
                                     <Typography sx={{ color: "white", fontSize: "17px", opacity: ".5" }}>
-                                        Experienced Front-End Developer proficient
-                                        in HTML, CSS, and JavaScript, with expertise
-                                        in modern frameworks like ReactJs. Skilled in
-                                        creating responsive and visually appealing
-                                        web applications while ensuring cross-browser compatibility and performance
-                                        optimization.
+                                        Enthusiastic and detail-oriented Data Analyst with a strong foundation in statistical analysis, data visualization,
+                                        and data management.Proficient in using tools such as Excel, SQL, Python and Power BI for data analysis and
+                                        reporting
                                         <br></br><br></br>
 
-                                        What excites me most about web development is the opportunity to create innovative solutions and bring ideas to life through code.
-                                        I thrive on challenges and enjoy pushing the boundaries of what's possible on the web. Whether it's optimizing performance,
-                                        creating engaging user experiences, or diving into new technologies, I'm always eager to learn and grow as a developer.
+                                        Eager to contribute technical and analytical skills in a dynamic business environment.
+                                        Possesses excellent problem-solving abilities, effective communication skills, and a passion for leveraging data to drive
+                                        organizational success.
                                     </Typography>
                                 </Grid>
 
@@ -50,7 +47,7 @@ const AboutMe = () => {
                                         <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>Phone: <a href="tel:6369260614">6369260614</a></Typography>
                                         <Divider sx={{ bgcolor: "white", width: '70%', margin: "10px 0px 10px 0px" }}></Divider>
                                         <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>From: Chennai, India</Typography>
-                                        <Box sx={{ width: "200px" }}>   <a href='assets/media/Hari_Resume.pdf' target="_blank" rel="noopener noreferrer">
+                                        <Box sx={{ width: "200px" }}>   <a href='assets/media/Hariharan_Resume.pdf' target="_blank" rel="noopener noreferrer">
                                             <button className='resume-btn' variant='contained' type="submit">Download Resume</button>
                                         </a></Box>
                                     </Box>
@@ -58,65 +55,7 @@ const AboutMe = () => {
                             </Grid>
                         </Box>
 
-                        {/* <section className="count-down">
 
-                            <Box sx={{ padding: "0% 10% 0% 5%" }}>
-                                <Grid container rowSpacing={8} columnSpacing={8}>
-                                    <Grid className="count-grid" item xs={6} sm={6} md={3} >
-                                        <Box className="countdown-box" sx={{ marginLeft: "20px", paddingLeft: "10px" }}>
-                                            <Box display={"flex"}>
-                                                <Typography className="counter" sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    2
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    +
-                                                </Typography></Box>
-                                            <Typography sx={{ fontWeight: 'bold', fontSize: "15px", color: "white" }}>Years Experience</Typography>
-                                        </Box>
-                                    </Grid>
-
-                                    <Grid className="count-grid" item xs={6} sm={6} md={3}>
-                                        <Box className="countdown-box" sx={{ marginLeft: "20px", paddingLeft: "10px" }}>
-                                            <Box display={"flex"}>
-                                                <Typography className="counter" sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    0
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    +
-                                                </Typography></Box>
-                                            <Typography sx={{ fontWeight: 'bold', fontSize: "15px", color: "white" }}>Happy Clients</Typography>
-                                        </Box>
-                                    </Grid>
-
-                                    <Grid className="count-grid" item xs={6} sm={6} md={3}>
-
-                                        <Box className="countdown-box" sx={{ marginLeft: "20px", paddingLeft: "10px" }}>
-                                            <Box display={"flex"}>
-                                                <Typography className="counter" sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    6
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    +
-                                                </Typography></Box>
-                                            <Typography sx={{ fontWeight: 'bold', fontSize: "15px", color: "white" }}>Project Done</Typography>
-                                        </Box>
-                                    </Grid>
-
-                                    <Grid className="count-grid" item xs={6} sm={6} md={3}>
-                                        <Box className="countdown-box" sx={{ marginLeft: "20px", paddingLeft: "10px" }}>
-                                            <Box display={"flex"}>
-                                                <Typography className="counter" sx={{ fontSize: '40px', fontWeight: "700", color: "white" }}>
-                                                    3
-                                                </Typography>
-                                                <Typography sx={{ fontSize: '40px', fontWeight: "900", color: "white" }}>
-                                                    +
-                                                </Typography></Box>
-                                            <Typography sx={{ fontWeight: 'bold', fontSize: "15px", color: "white" }}>Services</Typography>
-                                        </Box>
-                                    </Grid>
-                                </Grid>
-                            </Box>
-                        </section> */}
                     </Box>
                 </Container>
             </Box>
