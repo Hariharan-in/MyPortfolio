@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Typography, Grid, Divider, Container } from '@mui/material'
+import { Box, Typography, Grid, Divider, Container, Button } from '@mui/material'
 
 
 const AboutMe = () => {
@@ -47,16 +47,16 @@ const AboutMe = () => {
                                         <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>Phone: <a href="tel:6369260614">6369260614</a></Typography>
                                         <Divider sx={{ bgcolor: "white", width: '70%', margin: "10px 0px 10px 0px" }}></Divider>
                                         <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>From: Chennai, India</Typography>
-                                        <Box sx={{ width: "200px" }}>   <a href='assets/media/Hariharan_Resume.pdf' target="_blank" rel="noopener noreferrer">
-                                            <button className='resume-btn' variant='contained' type="submit">Download Resume</button>
+                                        <Box>   <a href='assets/media/Hariharan_resume.pdf' target="_blank" rel="noopener noreferrer">
+                                            <Button className='resume-btn' variant='contained' type="submit">Download Resume</Button>
                                         </a></Box>
                                     </Box>
                                 </Grid>
                             </Grid>
-                        </Box>
 
 
                     </Box>
+                    </Box> 
                 </Container>
             </Box>
         </div>

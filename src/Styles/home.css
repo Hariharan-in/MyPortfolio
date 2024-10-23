@@ -385,7 +385,8 @@ nav .nav_toggler div {
 /* About Me */
 
 #about .resume-btn {
-    width: 200px;
+    width: 230px;
+    white-space: nowrap;
     background-color: aqua;
     background: linear-gradient(120deg, #3498db, #8e44ad);
     padding: 10px;

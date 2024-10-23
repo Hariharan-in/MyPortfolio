@@ -12,6 +12,7 @@ import Education from './Pages/Education'
 import Testimonial from './Pages/Testimonial'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NotFound from './Pages/Error'
+import Resume from './Pages/Resume'
 
 
 
