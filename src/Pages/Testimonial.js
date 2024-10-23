@@ -125,7 +125,7 @@ function Testimonial() {
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
                   <Box className='skill-box' sx={{ bgcolor: "black", height: "230px", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
-                      <img className="client-image" src="assets/media/skills/powerbi.png" width={70} height={70} />
+                      <img className="client-image" src="assets/media/skills/Powerbi.png" width={70} height={70} />
                       <Box>
                         <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Power BI</Typography>
                         {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
@@ -143,7 +143,7 @@ function Testimonial() {
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/Git.png" width={70} height={70} />
                       <Box>
-                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>G</Typography>
+                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Git</Typography>
                         {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
                       </Box>
                     </Box>
