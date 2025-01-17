@@ -52,39 +52,41 @@ function Testimonial() {
               navigation={true}
 
             >
-              <SwiperSlide>
+
+<SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
                   <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
-                      <img className="client-image" src="assets/media/skills/microsoft-excel.jpeg" width={70} height={70} />
-
-                      <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px", marginTop: "15px" }}>Microsoft Excel</Typography>
-                      {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
-
-                    </Box>
-                    <Typography sx={{ color: "GrayText" }}>
-                      Proficient in Excel for data analysis, including data cleaning, advanced formulas, and creating reports with pivot tables and charts.
-                    </Typography>
-                  </Box>
-                </Box>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
-                    <Box sx={{ display: "flex", gap: "20px" }}>
-                      <img className="client-image" src="assets/media/skills/python.webp" width={70} height={70} />
+                      <img className="client-image" src="assets/media/skills/javascript3.png" width={70} height={70} />
                       <Box>
-                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Python</Typography>
+                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Javascript</Typography>
                         {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
                       </Box>
                     </Box>
                     <Typography sx={{ color: "GrayText" }}>
-                      Skilled in Python for data analysis, including data manipulation, statistical analysis, and automation using libraries like Pandas and NumPy.
+                    Skilled in JavaScript (ES6+) for web development, DOM manipulation, React, and optimizing performance with modern features like arrow functions, destructuring, and API integrations.
                     </Typography>
                   </Box>
                 </Box>
               </SwiperSlide>
+              <SwiperSlide>
+                <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
+                  <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
+                    <Box sx={{ display: "flex", gap: "20px" }}>
+                      <img className="client-image" src="assets/media/skills/react.png" width={70} height={70} />
+
+                      <Typography sx={{ fontWeight: "bold", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px", marginTop: "15px" }}>React JS</Typography>
+                      {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
+
+                    </Box>
+                    <Typography sx={{ color: "GrayText" }}>
+                    Proficient in ReactJS for creating responsive web applications using reusable components, state management, hooks, Context API, and JSX.
+                    </Typography>
+                  </Box>
+                </Box>
+              </SwiperSlide>
+
+              
 
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>

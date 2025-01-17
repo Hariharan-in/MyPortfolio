@@ -26,8 +26,8 @@ function Home() {
             <Typed
               className='animation-type'
               strings={[
-                'Data Analyst',
-                'Coder',
+                'Developer',
+                'Analyst',
                 'Learner'
               ]}
               typeSpeed={150}

@@ -73,10 +73,10 @@ const Education = () => {
                       <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "152px", borderRadius: "5px", textAlign: "center" }}>
                         <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>Dec 2021 - Feb 2022</Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "23px", color: "#fff", paddingTop: "7px" }}>Python</Typography>
+                      <Typography sx={{ fontSize: "23px", color: "#fff", paddingTop: "7px" }}>React</Typography>
                       <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>DLK Institute</Typography>
-                      <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>Complete Certification Course in Python including
-                        Pandas, Numpy and Matplotlib</Typography>
+                      <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>Complete Certification Course in React JS including
+                        DOM, React Components, Props And State and React Hooks</Typography>
 
                     </Box>
                   </Grid>
@@ -84,11 +84,11 @@ const Education = () => {
                   <Grid item xs={12} md={4}>
                     <Box sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", padding: "5%", textAlign: "left", height: "250px" }}>
                       <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px", textAlign: "center" }}>
-                        <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>Aug 2024 - Present</Typography>
+                        <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>Jan 2024 - Feb 2024</Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "23px", color: "#fff", paddingTop: "7px" }}>Data Analyst</Typography>
-                      <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>Bluekite Learning</Typography>
-                      <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>The Data Analyst course at Bluekite Learning is currently in progress.</Typography>
+                      <Typography sx={{ fontSize: "23px", color: "#fff", paddingTop: "7px" }}>Programming with JavaScript</Typography>
+                      <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>Coursera</Typography>
+                      <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>An online non-credit course authorized by <b>Meta</b>  and offered through Coursera</Typography>
                     </Box>
                   </Grid>
 
@@ -104,13 +104,13 @@ const Education = () => {
                       <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px", textAlign: "center" }}>
                         <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>May 2022- Apr 2024</Typography>
                       </Box>
-                      <Typography sx={{ fontSize: "23px", color: "#fff", paddingTop: "7px" }}>Web Developer</Typography>
+                      <Typography sx={{ fontSize: "20px", color: "#fff", paddingTop: "7px" }}>Web Developer | React Developer</Typography>
                       <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>SIVRA</Typography>
                       <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>Developing User Interfaces: Designing
                         and developing interactive user interfaces using ReactJS, JSX, and other related technologies.</Typography>
                     </Box>
                   </Grid>
-                  <Grid item xs={12} md={4}>
+                  {/* <Grid item xs={12} md={4}>
                     <Box sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", padding: "5%", textAlign: "left", height: "250px" }}>
                       <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px", textAlign: "center" }}>
                         <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>May 2022- Apr 2024</Typography>
@@ -122,7 +122,7 @@ const Education = () => {
                         tools like Excel, SQL, and Python to
                         generate actionable insights.</Typography>
                     </Box>
-                  </Grid>
+                  </Grid> */}
                 </Grid>
               </Box>
 

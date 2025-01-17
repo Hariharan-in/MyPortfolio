@@ -23,18 +23,20 @@ const AboutMe = () => {
                                     <Box sx={{ display: "flex", flexDirection: "row", gap: "8px" }}>
                                         <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}>I'm</Typography>
                                         <Typography className='about-typo' sx={{ fontSize: "30px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text" }}>Hariharan,</Typography>
-                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}> a Data Analyst</Typography>
+                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}> a Web Developer</Typography>
                                     </Box>
                                     <br></br>
                                     <Typography sx={{ color: "white", fontSize: "17px", opacity: ".5" }}>
-                                        Enthusiastic and detail-oriented Data Analyst with a strong foundation in statistical analysis, data visualization,
-                                        and data management.Proficient in using tools such as Excel, SQL, Python and Power BI for data analysis and
-                                        reporting
+                                        Experienced Front-End Developer proficient in HTML, CSS, and JavaScript, with expertise
+                                        in modern frameworks like <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>ReactJs</b> . Skilled in
+                                        creating responsive and visually appealing
+                                        web applications while ensuring cross
+                                        browser compatibility and performance
+                                        optimization. I thrive on solving challenges and continuously learning the latest trends in web development.
                                         <br></br><br></br>
 
-                                        Eager to contribute technical and analytical skills in a dynamic business environment.
-                                        Possesses excellent problem-solving abilities, effective communication skills, and a passion for leveraging data to drive
-                                        organizational success.
+                                        
+                                        In addition to web development, I have strong expertise in creating impactful <b style={{ backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Power BI dashboards</b>. I transform complex datasets into clear, actionable insights through visually compelling and interactive dashboards, enabling businesses to make informed decisions.
                                     </Typography>
                                 </Grid>
 
@@ -55,8 +57,8 @@ const AboutMe = () => {
                             </Grid>
 
 
+                        </Box>
                     </Box>
-                    </Box> 
                 </Container>
             </Box>
         </div>
