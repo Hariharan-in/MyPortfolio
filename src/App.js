@@ -11,14 +11,15 @@ import GoToTop from './Component/GoToTop'
 import Education from './Pages/Education'
 import Testimonial from './Pages/Testimonial'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NotFound from './Pages/Error'
 import Resume from './Pages/Resume'
+import Portfolio from "./Pages/Portfolio"
 
 
 
 function App() {
 
   const [loading, setLoading] = useState(true);
+  
 
   useEffect(() => {
     setLoading(true)
@@ -28,20 +29,8 @@ function App() {
   }, [])
 
   return (
-    <div>
-      
-      {
-        loading ?
-          <Box className='loader'>
-            <RiseLoader
-              color={'#00FFFF'}
-              loading={loading}
-              size={20}
-              aria-label="Loading Spinner"
-              data-testid="loader"
-            />
-          </Box>
-          :
+    
+     
           
           <div>
             
@@ -52,14 +41,14 @@ function App() {
             <Education />
             <Testimonial />
             <WhatIDo />
-            {/* <Portfolio /> */}
+            <Portfolio />
             <Contact />
           
           
           </div>
-      }
+      
     
-    </div>
+  
   
   );
 }

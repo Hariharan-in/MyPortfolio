@@ -825,47 +825,53 @@ Swiper */
 }
 
 #portfolio .gallery-image .slide-img1 {
-    background-image: url(../../public/assets/media/portfolio/project-1.jpg);
+    background-image: url(../../public/assets/media/portfolio/project-1.png);
    
     height: 300px;
     background-size: cover;
     background-position: center;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    border-radius: 5px;
 }
 
 #portfolio .gallery-image .slide-img2 {
-    background-image: url(../../public/assets/media/portfolio/project-2.jpg);
-  
+    background-image: url(../../public/assets/media/portfolio/project-2.png);
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     height: 300px;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    border-radius: 5px;
     text-align: center;
     cursor: pointer;
 }
 
 
 #portfolio .gallery-image .slide-img3 {
-    background-image: url(../../public/assets/media/portfolio/project-3.jpg);
- 
-    height: 300px;
+    background-image: url(../../public/assets/media/portfolio/project-3.jpeg);
+     height: 300px;
     background-size: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     background-position: center;
     text-align: center;
     cursor: pointer;
+     border-radius: 5px;
 }
 
 #portfolio .gallery-image .slide-img4 {
-    background-image: url(../../public/assets/media/portfolio/project-4.jpg);
-   
+    background-image: url(../../public/assets/media/portfolio/project-4.png);
     height: 300px;
     background-size: cover;
     background-position: center;
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+     border-radius: 5px;
 }
 
-#portfolio .gallery-image .slide-img5 {
+
+
+/* #portfolio .gallery-image .slide-img5 {
     background-image: url(../../public/assets/media/portfolio/project-5.jpg);
    
     height: 300px;
@@ -883,7 +889,7 @@ Swiper */
     background-position: center;
     text-align: center;
     cursor: pointer;
-}
+} */
 
 .hover-text:hover {
     opacity: 1;
@@ -899,25 +905,25 @@ Swiper */
 
 #portfolio .gallery-image .slide-img1:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: .8s;
 }
 
 #portfolio .gallery-image .slide-img2:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: .8s;
 }
 
 #portfolio .gallery-image .slide-img3:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: .8s;
 }
 
 #portfolio .gallery-image .slide-img4:hover {
     transform: scale(1.05);
-    transition-duration: 1s;
+    transition-duration: .8s;
 }
 
-#portfolio .gallery-image .slide-img5:hover {
+/* #portfolio .gallery-image .slide-img5:hover {
     transform: scale(1.05);
     transition-duration: 1s;
 }
@@ -925,7 +931,7 @@ Swiper */
 #portfolio .gallery-image .slide-img6:hover {
     transform: scale(1.05);
     transition-duration: 1s;
-}
+} */
 
 #portfolio .gallery-image .slide-img1:hover .hover-content {
     opacity: .5;
