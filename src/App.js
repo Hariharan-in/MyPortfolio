@@ -13,6 +13,7 @@ import Testimonial from './Pages/Testimonial'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Resume from './Pages/Resume'
 import Portfolio from "./Pages/Portfolio"
+import Error from "./Pages/Error"
 
 
 
@@ -32,20 +33,33 @@ function App() {
     
      
           
-          <div>
-            
-            <Navbar />
-            <GoToTop />
-            <Home />
-            <AboutMe />
-            <Education />
-            <Testimonial />
-            <WhatIDo />
-            <Portfolio />
-            <Contact />
-          
-          
-          </div>
+         <Router>
+      <Navbar />
+      <GoToTop />
+
+      <Routes>
+        {/* Home page */}
+        <Route
+          path="/"
+          element={
+            <>
+              <Home />
+              <AboutMe />
+              <Education />
+              <Testimonial />
+              <WhatIDo />
+              <Portfolio />
+              <Contact />
+            </>
+          }
+        />
+
+       
+
+        {/* 404 page (catch-all) */}
+        <Route path="*" element={<Error />} />
+      </Routes>
+     </Router>
       
     
   

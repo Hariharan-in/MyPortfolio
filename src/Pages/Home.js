@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Box, Button, Container, Typography } from '@mui/material'
 import { Link } from 'react-scroll'
 import '../Styles/home.css'
@@ -21,7 +21,7 @@ function Home() {
       }, 800)
     }, [])
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const img = new Image();
     img.src = "assets/media/home/bgImage5.png"; // Preload image
     const video = document.createElement("video");
@@ -46,7 +46,7 @@ function Home() {
           data-testid="loader"
         />
       </Box> : (
-          <> <video preload='none' autoPlay loop muted playsInline className='backgroung-clip' controls>
+          <> <video preload='auto' autoPlay loop muted playsInline className='backgroung-clip' poster="/assets/media/videobg.png"  controls>
           <source src="assets/media/v3.mp4" type="video/mp4" />
         </video>
   

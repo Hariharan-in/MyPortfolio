@@ -26,81 +26,89 @@ const StyledTextField = styled(TextField)({
 
 function Contact() {
 
-  const [userData, setUserData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+ const [userData, setUserData] = useState({
+  name: "",
+  phone: "",
+  email: "",
+  subject: "",
+  message: "",
+});
 
-  let name, value;
+let name, value;
 
-  const postUserData = (event) => {
-    name = event.target.name;
-    value = event.target.value;
+const postUserData = (event) => {
+  name = event.target.name;
+  value = event.target.value;
 
-    setUserData({ ...userData, [name]: value });
-  };
+  setUserData({ ...userData, [name]: value });
+};
 
+// Connect with Firebase
+const submitData = async (e) => {
+  e.preventDefault();
 
-  //Connect with Firebase
-  const submitData = async (e) => {
-    e.preventDefault();
+  const { name, phone, email, subject, message } = userData;
 
-    const { name, phone, email, subject, message } = userData;
+  // ✅ Validation first
+  if (!name || !phone || !email || !subject || !message) {
+    alert("Please fill all the data");
+    return;
+  }
 
-    if (name && email && subject && message && phone) {
-      const res = fetch('https://myprofile-7ss-default-rtdb.firebaseio.com/userDataRecords.json', {
+  if (phone.length !== 10) {
+    alert("Invalid Mobile Number");
+    return;
+  }
+
+  if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(email)) {
+    alert("Invalid Email");
+    return;
+  }
+
+  try {
+    // ✅ Only store if validations passed
+    const res = await fetch(
+      "https://myprofile-7ss-default-rtdb.firebaseio.com/userDataRecords.json",
+      {
         method: "POST",
         headers: {
-          "content-Type": 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
           name,
           phone,
           email,
           subject,
-          message
-        })
+          message,
+        }),
       }
+    );
 
+    if (res.ok) {
+      setUserData({
+        name: "",
+        phone: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
 
-      );
+      // Show alert
+      document.querySelector(".alert").style.display = "block";
 
-      if (phone.length != 10) {
-        alert("Invalid Mobile Number")
-      }
-      else if (!(email.match('[a-z0-9]+@[a-z]+\.[a-z]{2,3}'))) {
-        alert("Invalid Email")
-      }
-      else if (res) {
-        setUserData({
-          name: "",
-          phone: "",
-          email: "",
-          subject: "",
-          message: "",
-        });
-
-
-        //alert shown
-        document.querySelector('.alert').style.display = "block";
-
-        //alert remove
-        setTimeout(() => {
-          document.querySelector('.alert').style.display = "none"
-        }, 3000);
-
-      }
-
+      // Hide alert
+      setTimeout(() => {
+        document.querySelector(".alert").style.display = "none";
+      }, 3000);
+    } else {
+      alert("Something went wrong while saving data");
     }
+  } catch (error) {
+    console.error(error);
+    alert("Error while submitting data");
+  }
+};
 
-
-    else {
-      alert("please fill All the Data")
-    };
-  };
 
 
   return (

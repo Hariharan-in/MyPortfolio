@@ -20,7 +20,7 @@ function Navbar() {
             <li className='nav_item'><Link className='nav_link' to="testimonial" spy={true} smooth={true} duration={100}>My Skills</Link></li>
             <li className='nav_item'><Link className='nav_link' to="whatido" spy={true} smooth={true} duration={100}>What I Do</Link></li>
 
-            {/* <li className='nav_item'><Link className='nav_link' to="portfolio" spy={true} smooth={true}  duration={100}>Portofolio</Link></li> */}
+            <li className='nav_item'><Link className='nav_link' to="portfolio" spy={true} smooth={true}  duration={100}>Portofolio</Link></li>
             {/* <li className='nav_item'><Link className='nav_link' to="testimonial" spy={true} smooth={true}  duration={100}>Testimonial</Link></li> */}
             <li className='nav_item'><Link className='nav_link' to="contact" spy={true} smooth={true} duration={100}>Contact</Link></li>
           </ul>

@@ -18,7 +18,7 @@ const AboutMe = () => {
                         </Box>
 
                         <Box sx={{ padding: "5% 0% 10% 5%" }}>
-                            <Grid container rowSpacing={5} columnSpacing={5}>
+                            <Grid container rowSpacing={8} columnSpacing={8}>
                                 <Grid item xs={12} sm={12} md={8}>
                                     <Box sx={{ display: "flex", flexDirection: "row", gap: "8px" }}>
                                         <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}>I'm</Typography>
@@ -37,6 +37,17 @@ const AboutMe = () => {
 
                                         
                                         In addition to web development, I have strong expertise in creating impactful <b style={{ backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Power BI dashboards</b>. I transform complex datasets into clear, actionable insights through visually compelling and interactive dashboards, enabling businesses to make informed decisions.
+
+
+                                        <br></br><br></br>
+
+                                        Expanding my expertise in <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Java</b> backend and 
+                                         <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}> MySQL</b>, 
+                                         I am working towards becoming a <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Full-Stack Developer. </b> 
+                                        I already have strong Front-End skills and now focus on creating complete, 
+                                        scalable web solutions
+
+                                        
                                     </Typography>
                                 </Grid>
 

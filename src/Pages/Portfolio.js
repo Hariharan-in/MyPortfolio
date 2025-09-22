@@ -19,46 +19,56 @@ function Portfolio() {
 
             <section className="gallery-image">
 
-              <Box sx={{ marginTop: '3rem' }}>
-                <Grid container rowSpacing={7} columnSpacing={7}>
+              <Box sx={{ marginTop: '3rem'}}>
+                <Grid container rowSpacing={3} columnSpacing={3} style={{display:"flex",justifyContent:"center" }}>
                   <Grid item xs={12} sm={6}>
+                    <Box className="project-box">
                     <a href='https://react-project-site.web.app' target="_blank" >
                     <Box className="slide-img1">
                       <Box className="hover-content">
-                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Eco Farm</Typography>
+                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Farm Site</Typography>
                       </Box>
                     </Box>
                     </a>
+                    </Box>
+                  </Grid>
+
+                 
+
+                  <Grid item xs={6} sm={6}>
+                    <Box className="project-box">
+                    <a href='https://react-food-sta.web.app/' target="_blank" >
+                    <Box className="slide-img3">
+                      <Box className="hover-content">
+                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Food-App</Typography>
+                      </Box>
+                    </Box>
+                    </a>
+                    </Box>
+                  </Grid>
+
+                   <Grid item xs={6} sm={6}>
+                    <Box className="project-box">
+                    <a  target="_blank" >
+                    <Box className="slide-img2">
+                      <Box className="hover-content">
+                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Communication App</Typography>
+                      </Box>
+                    </Box>
+                    </a>
+                    </Box>
                   </Grid>
 
                   <Grid item xs={12} sm={6}>
-                    <a href='https://www.google.com/' target="_blank" >
-                    <Box className="slide-img2">
-                      <Box className="hover-content">
-                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Web Design</Typography>
-                      </Box>
-                    </Box>
-                    </a>
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} >
-                    <a href='https://www.google.com/' target="_blank" >
-                    <Box className="slide-img3">
-                      <Box className="hover-content">
-                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Business Analysis</Typography>
-                      </Box>
-                    </Box>
-                    </a>
-                  </Grid>
-
-                  <Grid item xs={12} sm={6} >
-                    <a href='https://www.google.com/' target="_blank" >
+                    <Box className="project-box">
+                    <a href='https://myprofile-7ss.web.app/' target="_blank" >
                     <Box className="slide-img4">
                       <Box className="hover-content">
-                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>Marketing</Typography>
+                        <Typography sx={{ fontWeight: "bold", color: "aqua", fontSize: "17px", padding: "10%" }}>MyProfile</Typography>
                       </Box>
                     </Box>
                     </a>
+                    </Box>
                   </Grid>
 
                 </Grid>
