@@ -102,7 +102,17 @@ const Education = () => {
                   <Grid item xs={12} md={4}>
                     <Box sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", padding: "5%", textAlign: "left", height: "250px" }}>
                       <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px", textAlign: "center" }}>
-                        <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>May 2022- Apr 2024</Typography>
+                        <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>Oct 2025 - Current</Typography>
+                      </Box>
+                      <Typography sx={{ fontSize: "20px", color: "#fff", paddingTop: "7px" }}>Junior Software Engineer</Typography>
+                      <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>Catalyst Consulting Pvt Ltd</Typography>
+                      <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px" }}>Spearheading the design and development of proprietary software products using React. Focused on crafting scalable frontend architectures and delivering intuitive, high-quality user experiences.</Typography>
+                    </Box>
+                  </Grid>
+                  <Grid item xs={12} md={4}>
+                    <Box sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", padding: "5%", textAlign: "left", height: "250px" }}>
+                      <Box sx={{ background: "linear-gradient(120deg, #3498db, #8e44ad)", width: "150px", borderRadius: "5px", textAlign: "center" }}>
+                        <Typography sx={{ fontSize: "15px", color: "black", fontWeight: "bold", padding: "3px" }}>May 2022 - Apr 2024</Typography>
                       </Box>
                       <Typography sx={{ fontSize: "20px", color: "#fff", paddingTop: "7px" }}>Web Developer | React Developer</Typography>
                       <Typography sx={{ fontSize: "18px", color: "aqua", paddingTop: "7px" }}>SIVRA</Typography>

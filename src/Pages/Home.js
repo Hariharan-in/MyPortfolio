@@ -11,7 +11,8 @@ import RiseLoader from "react-spinners/RiseLoader";
 
 function Home() {
 
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [imageLoaded, setImageLoaded] = useState(false);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -19,34 +20,50 @@ function Home() {
       setTimeout(() => {
         setLoading(false)
       }, 800)
+      
+      // Fallback: force show after 5 seconds to prevent infinite loading screen if assets fail
+      const timeout = setTimeout(() => {
+        setVideoLoaded(true);
+        setImageLoaded(true);
+      }, 5000);
+      return () => clearTimeout(timeout);
     }, [])
 
-  useLayoutEffect(() => {
-    const img = new Image();
-    img.src = "assets/media/home/bgImage5.png"; // Preload image
-    const video = document.createElement("video");
-    video.src = "assets/media/v3.mp4"; // Preload video
-
-    Promise.all([
-      new Promise((res) => (img.onload = res)),
-      new Promise((res) => (video.oncanplaythrough = res)),
-    ]).then(() => setIsLoaded(true));
-  }, []);
+  const isReady = videoLoaded && imageLoaded && !loading;
 
   return (
 
-    <section id="home">
+    <section id="home" style={{ position: 'relative' }}>
       {
-        !isLoaded ?  <Box className='loader'>
-        <RiseLoader
-          color={'#00FFFF'}
-          loading={loading}
-          size={20}
-          aria-label="Loading Spinner"
-          data-testid="loader"
-        />
-      </Box> : (
-          <> <video preload='auto' autoPlay loop muted playsInline className='backgroung-clip' poster="/assets/media/videobg.png"  controls>
+        !isReady && (
+          <Box className='loader' style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 9999, backgroundColor: 'black' }}>
+            <RiseLoader
+              color={'#00FFFF'}
+              loading={true}
+              size={20}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          </Box>
+        )
+      }
+      <div style={{ opacity: isReady ? 1 : 0, transition: 'opacity 0.5s ease-in-out' }}>
+        <video 
+          preload='auto' 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className='backgroung-clip' 
+          poster="/assets/media/videobg.png"  
+          controls
+          onCanPlayThrough={() => setVideoLoaded(true)}
+          onLoadedData={(e) => {
+            if (e.target.readyState >= 3) {
+              setVideoLoaded(true);
+            }
+          }}
+        >
           <source src="assets/media/v3.mp4" type="video/mp4" />
         </video>
   
@@ -97,16 +114,15 @@ function Home() {
   
             </Box>
             <Box className="img-container">
-              <img src="assets/media/home/bgImage5.png" width={550} height={450} ></img>
+              <img src="assets/media/home/bgImage5.png" width={550} height={450} onLoad={() => setImageLoaded(true)} alt="bg"></img>
   
             </Box>
   
           </Box>
   
   
-        </Container></>
-        )
-      }
+        </Container>
+      </div>
      
 
 

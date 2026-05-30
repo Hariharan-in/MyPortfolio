@@ -53,7 +53,7 @@ function Testimonial() {
 
             >
 
-<SwiperSlide>
+              <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
                   <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
@@ -64,7 +64,7 @@ function Testimonial() {
                       </Box>
                     </Box>
                     <Typography sx={{ color: "GrayText" }}>
-                    Skilled in JavaScript (ES6+) for web development, React, and optimizing performance with modern features like arrow functions, destructuring, and API integrations.
+                      Skilled in JavaScript (ES6+) for web development, React, and optimizing performance with modern features like arrow functions, destructuring, and API integrations.
                     </Typography>
                   </Box>
                 </Box>
@@ -80,19 +80,19 @@ function Testimonial() {
 
                     </Box>
                     <Typography sx={{ color: "GrayText" }}>
-                    Proficient in ReactJS for creating responsive web applications using reusable components, state management, hooks, Context API, and JSX.
+                      Proficient in ReactJS for creating responsive web applications using reusable components, state management, hooks, Context API, and JSX.
                     </Typography>
                   </Box>
                 </Box>
               </SwiperSlide>
 
-              
+
 
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
                   <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
-                      <img className="client-image" src="assets/media/skills/My_sql.png" width={70} height={70} />
+                      <img className="client-image" style={{ objectFit: "contain", backgroundColor: "white", padding: "2px" }} src="assets/media/skills/My_sql.png" width={70} height={70} />
                       <Box>
                         <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>MYSQL</Typography>
                         {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
@@ -127,14 +127,14 @@ function Testimonial() {
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
                   <Box className='skill-box' sx={{ bgcolor: "black", height: "230px", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
-                      <img className="client-image" src="assets/media/skills/java2.png" width={70} height={70} />
+                      <img className="client-image" src="assets/media/skills/powerbi1.jpg" width={70} height={70} alt="Power BI" />
                       <Box>
-                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Java</Typography>
+                        <Typography sx={{ fontWeight: "bold", marginTop: "15px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", fontSize: "20px" }}>Power BI</Typography>
                         {/* <Typography sx={{ fontWeight: "bold", color: "#fff", fontSize: "14px", opacity: ".6" }}>User from USA</Typography> */}
                       </Box>
                     </Box>
                     <Typography sx={{ color: "GrayText" }}>
-                   Proficient in core Java fundamentals with practical understanding of OOP concepts and exception handling
+                      Expertise in developing interactive Power BI dashboards and reports to visualize complex datasets, transforming raw data into actionable insights for strategic decision-making.
                     </Typography>
                   </Box>
                 </Box>

@@ -42,11 +42,11 @@ nav .web-logo {
     cursor: pointer;
 }
 
-/* .nav_item .active {
+.nav_item .active {
     padding-bottom: 12px;
     border-bottom: 3px solid aqua;
     color: aqua;
-} */
+}
 
 nav ul {
     padding:16px 0px;

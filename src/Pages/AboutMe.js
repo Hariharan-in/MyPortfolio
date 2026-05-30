@@ -39,15 +39,7 @@ const AboutMe = () => {
                                         In addition to web development, I have strong expertise in creating impactful <b style={{ backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Power BI dashboards</b>. I transform complex datasets into clear, actionable insights through visually compelling and interactive dashboards, enabling businesses to make informed decisions.
 
 
-                                        <br></br><br></br>
 
-                                        Expanding my expertise in <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Java</b> backend and 
-                                         <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}> MySQL</b>, 
-                                         I am working towards becoming a <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Full-Stack Developer. </b> 
-                                        I already have strong Front-End skills and now focus on creating complete, 
-                                        scalable web solutions
-
-                                        
                                     </Typography>
                                 </Grid>
 

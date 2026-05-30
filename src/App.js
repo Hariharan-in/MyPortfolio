@@ -48,7 +48,7 @@ function App() {
               <Education />
               <Testimonial />
               <WhatIDo />
-              <Portfolio />
+              {/* <Portfolio /> */}
               <Contact />
             </>
           }
