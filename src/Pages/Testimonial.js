@@ -1,10 +1,12 @@
 import { Typography, Box, Divider, Avatar, Container } from '@mui/material'
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from 'react'
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { EffectCoverflow, Pagination, Navigation, Autoplay } from "swiper";
 import "swiper/css";
+import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "../Styles/home.css";
 
 function Testimonial() {
   return (
@@ -12,50 +14,48 @@ function Testimonial() {
       <Box sx={{ backgroundColor: "#212529!important", padding: "50px 0%" }}>
         <Container>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Box>
-              <Typography className="testimonial-title" sx={{ textAlign: "center", fontWeight: "bold", fontSize: "110px", color: "white", opacity: ".1", letterSpacing: "4px" }}>SUMMARY</Typography>
-              <Box className="testimonial-title1" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Typography className='testimonial-quote' sx={{ textAlign: "center", fontWeight: "bold", fontSize: "35px", color: "white", marginTop: "-100px" }}>MY SKILLS</Typography>
-                <Divider sx={{ bgcolor: "aqua", height: "4px", width: "80px", justifyContent: "center" }}></Divider>
+            <Box sx={{ position: "relative", textAlign: "center", mb: 10, mt: 4, display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <Box sx={{ position: "relative", zIndex: 1 }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: "35px", color: "white", mb: 1 }}>
+                  MY SKILLS
+                </Typography>
               </Box>
+              <Divider sx={{ background: "linear-gradient(135deg, #3498db, #8e44ad)", height: "4px", width: "80px", borderRadius: "2px", zIndex: 1 }} />
+
+              <Typography sx={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: { xs: "-20px", md: "-40px" }, fontSize: { xs: "55px", md: "110px" }, fontWeight: "900", color: "transparent", WebkitTextStroke: "2px rgba(255,255,255,0.08)", textShadow: "0 10px 30px rgba(0,0,0,0.5)", letterSpacing: { xs: "5px", md: "10px" }, textTransform: "uppercase", zIndex: 0, pointerEvents: "none", width: "100%", textAlign: "center", lineHeight: 1 }}>
+                SUMMARY
+              </Typography>
             </Box>
           </Box>
 
           <Box>
             <Swiper
+              effect={"coverflow"}
+              grabCursor={true}
+              centeredSlides={true}
               breakpoints={{
-
-                400: {
-                  slidesPerView: 1,
-                  slidesPerGroup: 1,
-                },
-
-                600: {
-                  slidesPerView: 2,
-                  slidesPerGroup: 2,
-                },
-                950: {
-                  slidesPerView: 2,
-                  slidesPerGroup: 2,
-                }
-              }
-              }
-              autoplay={{ delay: 5000 }}
-              pagination={{
-                clickable: true,
-
+                0: { slidesPerView: 1, spaceBetween: 20 },
+                768: { slidesPerView: 3, spaceBetween: 30 },
+                1024: { slidesPerView: 3, spaceBetween: 40 }
               }}
+              coverflowEffect={{
+                rotate: 25,
+                stretch: 0,
+                depth: 150,
+                modifier: 1.2,
+                slideShadows: true,
+              }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
-              speed={1000}
-              modules={[Pagination, Navigation, Autoplay]}
-              className="mySwiper"
+              speed={500}
+              modules={[EffectCoverflow, Navigation, Autoplay]}
+              className="mySwiper premium-swiper"
               navigation={true}
-
             >
 
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/javascript3.png" width={70} height={70} />
                       <Box>
@@ -71,7 +71,7 @@ function Testimonial() {
               </SwiperSlide>
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/react.png" width={70} height={70} />
 
@@ -90,7 +90,7 @@ function Testimonial() {
 
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "230px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" style={{ objectFit: "contain", backgroundColor: "white", padding: "2px" }} src="assets/media/skills/My_sql.png" width={70} height={70} />
                       <Box>
@@ -107,7 +107,7 @@ function Testimonial() {
 
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", height: "230px", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/web.jpg" width={70} height={70} />
                       <Box>
@@ -125,7 +125,7 @@ function Testimonial() {
               </SwiperSlide>
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", height: "230px", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/powerbi1.jpg" width={70} height={70} alt="Power BI" />
                       <Box>
@@ -141,7 +141,7 @@ function Testimonial() {
               </SwiperSlide>
               <SwiperSlide>
                 <Box sx={{ bgcolor: "#212529!important", padding: "4% 5% 15% 5%" }}>
-                  <Box className='skill-box' sx={{ bgcolor: "black", height: "230px", borderRadius: "5px", opacity: ".8", display: "flex", flexDirection: "column", gap: "25px", padding: "30px" }}>
+                  <Box className='skill-box premium-skill-box' sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "30px", height: "300px" }}>
                     <Box sx={{ display: "flex", gap: "20px" }}>
                       <img className="client-image" src="assets/media/skills/Git.png" width={70} height={70} />
                       <Box>

@@ -24,12 +24,17 @@ const Resume = () => {
       <Box sx={{ backgroundColor: "#212529!important", textAlign: "center", padding: "50px 0%" }}>
         <Container>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Box>
-              <Typography className="resume-title" sx={{ textAlign: "center", fontWeight: "bold", fontSize: "110px", color: "white", opacity: ".1", letterSpacing: "4px" }}>SUMMARY</Typography>
-              <Box className="resume-title1" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Typography className='resume-quote' sx={{ textAlign: "center", fontWeight: "bold", fontSize: "35px", color: "white", marginTop: "-100px" }}>Resume</Typography>
-                <Divider sx={{ bgcolor: "aqua", height: "4px", width: "80px", justifyContent: "center" }}></Divider>
+            <Box sx={{ position: "relative", textAlign: "center", mb: 10, mt: 4, display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <Box sx={{ position: "relative", zIndex: 1 }}>
+                <Typography sx={{ fontWeight: "bold", fontSize: "35px", color: "white", mb: 1 }}>
+                  Resume
+                </Typography>
               </Box>
+              <Divider sx={{ background: "linear-gradient(135deg, #3498db, #8e44ad)", height: "4px", width: "80px", borderRadius: "2px", zIndex: 1 }} />
+
+              <Typography sx={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: { xs: "-20px", md: "-40px" }, fontSize: { xs: "55px", md: "110px" }, fontWeight: "900", color: "transparent", WebkitTextStroke: "2px rgba(255,255,255,0.08)", textShadow: "0 10px 30px rgba(0,0,0,0.5)", letterSpacing: { xs: "5px", md: "10px" }, textTransform: "uppercase", zIndex: 0, pointerEvents: "none", width: "100%", textAlign: "center", lineHeight: 1 }}>
+                SUMMARY
+              </Typography>
             </Box>
 
 
@@ -136,10 +141,10 @@ const Resume = () => {
                   </Box>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-                <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%",textAlign:"left",height:"190px",display:"flex",flexDirection:"row",gap:"20px",alignItems:"center" }}>
-                 <Box>
-                <img src='assets/media/skills/My_sql.png' style={{ objectFit: "contain", backgroundColor: "white", padding: "2px", borderRadius: "50%" }} width={50} height={50}/>
-                 </Box>
+                  <Box sx={{ bgcolor: "black", borderRadius: "25%", opacity: ".8", padding: "5%", textAlign: "left", height: "190px", display: "flex", flexDirection: "row", gap: "20px", alignItems: "center" }}>
+                    <Box>
+                      <img src='assets/media/skills/My_sql.png' style={{ objectFit: "contain", backgroundColor: "white", padding: "2px", borderRadius: "50%" }} width={50} height={50} />
+                    </Box>
                     <Box>
 
                       <Typography sx={{ fontSize: "15px", color: "#fff", opacity: ".7", paddingTop: "7px", textAlign: "left", marginTop: "10px" }}>

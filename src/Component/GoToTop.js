@@ -9,7 +9,7 @@ const GoToTop = () => {
 
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      document.getElementById("myBtn").style.display = "block";
+      document.getElementById("myBtn").style.display = "flex";
     } else {
       document.getElementById("myBtn").style.display = "none";
     }

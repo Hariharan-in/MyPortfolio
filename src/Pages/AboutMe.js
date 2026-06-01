@@ -9,57 +9,73 @@ const AboutMe = () => {
             <Box sx={{ backgroundColor: "#212529!important", width: "100%", padding: "50px 0%" }}>
                 <Container>
                     <Box sx={{ display: "flex", flexDirection: "column" }}>
-                        <Box className="about-box">
-                            <Typography className="about-title" sx={{ textAlign: "center", fontWeight: "bold", fontSize: "110px", color: "white", opacity: ".1", letterSpacing: "4px" }}>ABOUT ME</Typography>
-                            <Box className="about-title1" sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                                <Typography className='about-quote' sx={{ textAlign: "center", fontWeight: "bold", fontSize: "35px", color: "white", marginTop: "-100px" }}>Know Me More</Typography>
-                                <Divider sx={{ bgcolor: "aqua", height: "4px", width: "80px", justifyContent: "center" }}></Divider>
+                        <Box sx={{ position: "relative", textAlign: "center", mb: 10, mt: 4, display: "flex", flexDirection: "column", alignItems: "center" }}>
+                            <Box sx={{ position: "relative", zIndex: 1 }}>
+                                <Typography sx={{ fontWeight: "bold", fontSize: "35px", color: "white", mb: 1 }}>
+                                    Know Me More
+                                </Typography>
                             </Box>
+                            <Divider sx={{ background: "linear-gradient(135deg, #3498db, #8e44ad)", height: "4px", width: "80px", borderRadius: "2px", zIndex: 1 }} />
+
+                            <Typography sx={{ position: "absolute", left: "50%", transform: "translateX(-50%)", top: { xs: "-20px", md: "-40px" }, fontSize: { xs: "55px", md: "110px" }, fontWeight: "900", color: "transparent", WebkitTextStroke: "2px rgba(255,255,255,0.08)", textShadow: "0 10px 30px rgba(0,0,0,0.5)", letterSpacing: { xs: "5px", md: "10px" }, textTransform: "uppercase", zIndex: 0, pointerEvents: "none", width: "100%", textAlign: "center", lineHeight: 1 }}>
+                                ABOUT ME
+                            </Typography>
                         </Box>
 
-                        <Box sx={{ padding: "5% 0% 10% 5%" }}>
-                            <Grid container rowSpacing={8} columnSpacing={8}>
-                                <Grid item xs={12} sm={12} md={8}>
-                                    <Box sx={{ display: "flex", flexDirection: "row", gap: "8px" }}>
-                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}>I'm</Typography>
-                                        <Typography className='about-typo' sx={{ fontSize: "30px", backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text" }}>Hariharan,</Typography>
-                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "30px" }}> a Web Developer</Typography>
+                        <Box sx={{ padding: "5% 0% 10% 0%" }}>
+                            <Grid container rowSpacing={8} columnSpacing={6}>
+                                {/* Left Side: Text */}
+                                <Grid item xs={12} sm={12} md={7}>
+                                    <Box sx={{ display: "flex", flexDirection: "row", gap: "8px", flexWrap: "wrap", marginBottom: "20px" }}>
+                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "32px", fontWeight: "600" }}>I'm</Typography>
+                                        <Typography className='about-typo' sx={{ fontSize: "32px", fontWeight: "bold", backgroundImage: "linear-gradient(135deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Hariharan,</Typography>
+                                        <Typography className='about-typo' sx={{ color: "white", fontSize: "32px", fontWeight: "600" }}> a Web Developer</Typography>
                                     </Box>
-                                    <br></br>
-                                    <Typography sx={{ color: "white", fontSize: "17px", opacity: ".5" }}>
+
+                                    <Typography sx={{ color: "rgba(255, 255, 255, 0.7)", fontSize: "17px", lineHeight: "1.8", fontWeight: "300" }}>
                                         Experienced Front-End Developer proficient in HTML, CSS, and JavaScript, with expertise
-                                        in modern frameworks like <b style={{backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>ReactJs</b> . Skilled in
+                                        in modern frameworks like <span style={{ backgroundImage: "linear-gradient(135deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "600" }}>ReactJs</span>. Skilled in
                                         creating responsive and visually appealing
-                                        web applications while ensuring cross
-                                        browser compatibility and performance
+                                        web applications while ensuring cross-browser compatibility and performance
                                         optimization. I thrive on solving challenges and continuously learning the latest trends in web development.
-                                        <br></br><br></br>
+                                        <br /><br />
 
-                                        
-                                        In addition to web development, I have strong expertise in creating impactful <b style={{ backgroundImage: "linear-gradient(120deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text"}}>Power BI dashboards</b>. I transform complex datasets into clear, actionable insights through visually compelling and interactive dashboards, enabling businesses to make informed decisions.
-
-
-
+                                        In addition to web development, I have strong expertise in creating impactful <span style={{ backgroundImage: "linear-gradient(135deg, #3498db, #8e44ad)", color: "transparent", backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", fontWeight: "600" }}>Power BI dashboards</span>. I transform complex datasets into clear, actionable insights through visually compelling and interactive dashboards, enabling businesses to make informed decisions.
                                     </Typography>
                                 </Grid>
 
-                                <Grid item xs={12} sm={12} md={4}>
-                                    <Box sx={{ display: "flex", flexDirection: "column" }} className="cnt-link">
-                                        <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>Name: Hariharan</Typography>
-                                        <Divider sx={{ bgcolor: "white", width: '70%', margin: "10px 0px 10px 0px" }}></Divider>
-                                        <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>Email: <a href="mailto:harisankar11a@gmail.com">harisankar11a@gmail.com</a></Typography>
-                                        <Divider sx={{ bgcolor: "white", width: '70%', margin: "10px 0px 10px 0px" }}></Divider>
-                                        <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>Phone: <a href="tel:6369260614">6369260614</a></Typography>
-                                        <Divider sx={{ bgcolor: "white", width: '70%', margin: "10px 0px 10px 0px" }}></Divider>
-                                        <Typography sx={{ fontSize: "16px", color: "white", fontWeight: "bold" }}>From: Chennai, India</Typography>
-                                        <Box>   <a href='assets/media/Hariharan_resume.pdf' target="_blank" rel="noopener noreferrer">
-                                            <Button className='resume-btn' variant='contained' type="submit">Download Resume</Button>
-                                        </a></Box>
+                                {/* Right Side: Contact Card */}
+                                <Grid item xs={12} sm={12} md={5}>
+                                    <Box className="contact-card" sx={{ display: "flex", flexDirection: "column", gap: "25px", padding: "40px", background: "rgba(15, 15, 20, 0.6)", backdropFilter: "blur(12px)", borderRadius: "20px", border: "1px solid rgba(255, 255, 255, 0.05)", boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)" }}>
+
+                                        <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                                            <Typography sx={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: "600" }}>Name</Typography>
+                                            <Typography sx={{ fontSize: "18px", color: "white", fontWeight: "500" }}>Hariharan</Typography>
+                                        </Box>
+
+                                        <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                                            <Typography sx={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: "600" }}>Email</Typography>
+                                            <Typography sx={{ fontSize: "18px", color: "white", fontWeight: "500" }}><a href="mailto:harisankar11a@gmail.com" style={{ color: "white", textDecoration: "none", transition: "color 0.3s ease" }} onMouseOver={(e) => e.target.style.color = "#3498db"} onMouseOut={(e) => e.target.style.color = "white"}>harisankar11a@gmail.com</a></Typography>
+                                        </Box>
+
+                                        <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                                            <Typography sx={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: "600" }}>Phone</Typography>
+                                            <Typography sx={{ fontSize: "18px", color: "white", fontWeight: "500" }}><a href="tel:6369260614" style={{ color: "white", textDecoration: "none", transition: "color 0.3s ease" }} onMouseOver={(e) => e.target.style.color = "#3498db"} onMouseOut={(e) => e.target.style.color = "white"}>6369260614</a></Typography>
+                                        </Box>
+
+                                        <Box sx={{ display: "flex", flexDirection: "column", gap: "4px" }}>
+                                            <Typography sx={{ fontSize: "13px", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", letterSpacing: "1.5px", fontWeight: "600" }}>From</Typography>
+                                            <Typography sx={{ fontSize: "18px", color: "white", fontWeight: "500" }}>Chennai, India</Typography>
+                                        </Box>
+
+                                        <Box sx={{ marginTop: "10px" }}>
+                                            <a href='assets/media/Hariharan_resume.pdf' target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                                                <Button className='premium-resume-btn' variant='contained' type="submit" sx={{ width: "100%", padding: "12px", borderRadius: "30px", background: "linear-gradient(135deg, #3498db, #8e44ad)", color: "white", fontWeight: "bold", fontSize: "16px", textTransform: "none", boxShadow: "0 5px 15px rgba(52, 152, 219, 0.4)", transition: "all 0.3s ease", "&:hover": { transform: "translateY(-3px)", boxShadow: "0 8px 25px rgba(52, 152, 219, 0.6)", background: "linear-gradient(135deg, #3498db, #8e44ad)" } }}>Download Resume</Button>
+                                            </a>
+                                        </Box>
                                     </Box>
                                 </Grid>
                             </Grid>
-
-
                         </Box>
                     </Box>
                 </Container>
